@@ -6,15 +6,8 @@
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <a
-          class="navbar-item"
-          href="/"
-        >
-          <img
-            src="~assets/buefy.png"
-            alt="Buefy"
-            height="28"
-          >
+        <a class="navbar-item" href="/">
+          <img src="~assets/buefy.png" alt="Buefy" height="28" />
         </a>
 
         <div class="navbar-burger">
@@ -27,19 +20,12 @@
 
     <section class="main-content columns">
       <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">
-          General
-        </p>
+        <p class="menu-label is-hidden-touch">General</p>
         <ul class="menu-list">
-          <li
-            v-for="(item, key) of items"
-            :key="key"
-          >
-            <nuxt-link
-              :to="item.to"
-              exact-active-class="is-active"
-            >
-              <b-icon :icon="item.icon" /> {{ item.title }}
+          <li v-for="(item, key) of items" :key="key">
+            <nuxt-link :to="item.to" exact-active-class="is-active">
+              <b-icon :icon="item.icon" />
+              {{ item.title }}
             </nuxt-link>
           </li>
         </ul>
@@ -52,23 +38,25 @@
   </div>
 </template>
 
-<script>
-export default {
-  data () {
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api';
+
+export default defineComponent({
+  setup() {
     return {
       items: [
         {
           title: 'Home',
           icon: 'home',
-          to: { name: 'index' }
+          to: { name: 'index' },
         },
         {
           title: 'Resume',
           icon: 'file-document-edit',
-          to: { name: 'resume' }
-        }
-      ]
-    }
-  }
-}
+          to: { name: 'resume' },
+        },
+      ],
+    };
+  },
+});
 </script>

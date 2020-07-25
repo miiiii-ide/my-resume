@@ -1,21 +1,22 @@
 export interface IResume {
-    name: String;
-    kana: String;
-    birth: Date;
-    address: String;
-    telephone: String;
-    email: String;
-    jobs: IJob[];
-    licenses: ILicense[];
-    fullAge: number;
+  name: string;
+  kana: string;
+  birth: Date;
+  address: string;
+  telephone: string;
+  email: string;
+  jobs: IJob[];
+  licenses: ILicense[];
+  condition: string;
+  fullAge: number;
 }
 
 export interface IJob {
-    name: String;
-    date: Date;
+  name: string;
+  date: Date;
 }
 
 export interface ILicense {
-    name: String;
-    date: Date;
+  name: string;
+  date: Date;
 }

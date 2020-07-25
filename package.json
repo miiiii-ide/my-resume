@@ -8,7 +8,10 @@
     "start": "nuxt-ts start",
     "export": "nuxt-ts export",
     "serve": "nuxt-ts serve",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "prettier": "prettier -c"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.10",
@@ -19,11 +22,17 @@
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^1.0.3",
+    "@nuxtjs/eslint-config-typescript": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
     "@vue/test-utils": "^1.0.3",
     "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
     "babel-jest": "^26.0.1",
+    "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^6.2.2",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "ts-jest": "^26.1.0",

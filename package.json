@@ -17,11 +17,11 @@
     "@nuxt/typescript-runtime": "^0.4.10",
     "@nuxtjs/axios": "^5.11.0",
     "@vue/composition-api": "^1.0.0-beta.3",
-    "nuxt": "^2.13.0",
+    "nuxt": "^3.0.0",
     "nuxt-buefy": "^0.3.31"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^1.0.3",
+    "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.0",
@@ -36,6 +36,6 @@
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "ts-jest": "^26.1.0",
-    "vue-jest": "^3.0.4"
+    "vue-jest": "^4.0.1"
   }
 }
